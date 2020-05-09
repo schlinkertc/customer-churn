@@ -45,7 +45,7 @@ tenure_churn = df[df['tenure']>0].groupby('tenure').Churn.mean().reset_index()
 
 colors = {
     'background': '#FFFFFF',
-    'text': '#7FDBFF',
+    'text': 'black',
     'plotbg': "#DCDCDC"
 }
 
@@ -73,7 +73,7 @@ app.layout = html.Div(children=[
     
     html.Div([
         html.Div([
-            html.Label('Product Filter'),
+            html.Label('Product Filter - show contracts that include all selected products'),
             dcc.Dropdown(
                 id='product-filter',
                 options=[{'label':i,'value':i} for i in product_features],
@@ -99,7 +99,7 @@ app.layout = html.Div(children=[
         },
     ),
     
-    html.H4(children='Customer Churn'),
+    html.H4(children='Customer Churn - The Data'),
     generate_table(df)
     
 ])
