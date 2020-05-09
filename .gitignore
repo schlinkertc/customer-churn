@@ -2,3 +2,4 @@ churn_venv
 *.pyc
 .DS_Store
 .env
+.ipynb_checkpoints/
