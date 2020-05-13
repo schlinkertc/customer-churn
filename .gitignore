@@ -3,3 +3,4 @@ churn_venv
 .DS_Store
 .env
 .ipynb_checkpoints/
+recycling_bin.ipynb
