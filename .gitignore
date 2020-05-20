@@ -4,3 +4,4 @@ churn_venv
 .env
 .ipynb_checkpoints/
 recycling_bin.ipynb
+plotly.js-1.54.1.tgz
